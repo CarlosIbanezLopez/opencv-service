@@ -255,7 +255,7 @@ def bbox_to_json(bbox):
     return out
 
 
-@app.post("/    ")
+@app.post("/preprocess-ocr")
 async def preprocess_ocr(
     file: UploadFile = File(...),
     blur_threshold: float = Query(110.0),
